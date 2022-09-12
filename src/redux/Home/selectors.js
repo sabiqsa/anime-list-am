@@ -6,24 +6,10 @@ const selectHomeReducer = (state) => state.homeReducers || initialState;
 const makeSelectAnimeList = () =>
   createSelector(selectHomeReducer, (homeState) => homeState.dataAnimeList);
 
-const makeSelectArtistList = () =>
-  createSelector(selectHomeReducer, (homeState) => homeState.dataArtistList);
+const makeSelectAnimeDetails = () =>
+  createSelector(selectHomeReducer, (homeState) => homeState.dataAnimeDetails);
 
-const makeSelectSearchTrackList = () =>
-  createSelector(
-    selectHomeReducer,
-    (homeState) => homeState.dataSearchTrackList,
-  );
+const makeSelectSearchAnime = () =>
+  createSelector(selectHomeReducer, (homeState) => homeState.dataAnimeSearch);
 
-const makeSelectSearchArtistList = () =>
-  createSelector(
-    selectHomeReducer,
-    (homeState) => homeState.dataSearchArtistList,
-  );
-
-export {
-  makeSelectAnimeList,
-  makeSelectArtistList,
-  makeSelectSearchTrackList,
-  makeSelectSearchArtistList,
-};
+export { makeSelectAnimeList, makeSelectAnimeDetails, makeSelectSearchAnime };

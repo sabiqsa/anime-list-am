@@ -13,7 +13,9 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="menu-mobile">
-        <span>Anime List - Sabi</span>
+        <NavLink exact to="/">
+          <span>Anime List - Sabi</span>
+        </NavLink>
 
         <div className="toggle" onClick={showNavbar}>
           <img src={Menu} alt="menu" />
@@ -27,23 +29,7 @@ export default function Navbar() {
             className={({ isActive }) => (isActive ? 'navbar-active' : '')}
             to="/"
           >
-            Homepage
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? 'navbar-active' : '')}
-            to="/about"
-          >
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? 'navbar-active' : '')}
-            to="/contact"
-          >
-            Contact
+            Home
           </NavLink>
         </li>
       </ul>

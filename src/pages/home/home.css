@@ -8,3 +8,35 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.paginate__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.paginate__container ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.paginate__container li {
+    cursor: pointer;
+    padding: 16px;
+}
+
+.paginate__container--active {
+    background-color: #4098A5;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .paginate__container li {
+        cursor: pointer;
+        padding: 8px;
+    }
+}
+

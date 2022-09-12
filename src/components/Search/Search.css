@@ -1,0 +1,32 @@
+.search__container {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.search__container input {
+    padding: 8px;
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.search__container button {
+    padding: 0 24px;
+    background-color: #4098A5;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: #ffff;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .search__container input {
+        font-size: 12px;
+    }
+    .search__container button {
+        padding: 0 12px;
+        font-size: 12px;
+    }
+}
+

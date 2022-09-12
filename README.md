@@ -13,6 +13,7 @@ Requirement
 * This app using react-router v6.
 * global state management using redux and saga.
 * data api from jikan anime.
+* date using date-fns.
 ```
 
 # How to start
@@ -36,24 +37,17 @@ open http://localhost:3000/ on your browser.
 
 #### this page show home pages
 
-![tampilanutama](/images/homepage.png)
+![tampilanutama](/images/home-1.png)
+![tampilanutama](/images/home-2.png)
 
 ### search
 
-#### this page show when user search
+#### this page show when user search by clicking button "search"
 
-![about](/images/search.png)
-
-### halaman contact
-
+![about](/images/search-by-name.png)
 #### this page show the details
 
 ![contact](/images/details.png)
-
-#### condition, user can see more list anime by pagination 
-
-![phone](/images/animelist-pagination.png)
-
 # Testing using jest
 
 ```bash
